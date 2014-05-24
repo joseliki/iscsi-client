@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Bottle on OpenShift
 ===================
 
@@ -28,3 +29,9 @@ That's it, you can now checkout your application at:
 
     http://bottle-$yournamespace.rhcloud.com
 
+=======
+python-bottle
+=============
+
+repositorio de prueba sobre python bottle
+>>>>>>> 311744ed19344bb3893698ea8c63e19535b3f2a1
