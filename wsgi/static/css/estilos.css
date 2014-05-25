@@ -1,0 +1,90 @@
+body {	width:100%;
+	background-color:#cddeee;
+	font-size:14px;
+	}
+
+#contenedor {	width:80%;
+		background-color:#ffffff;
+		margin-left:4%;
+
+
+
+
+	}
+
+#contenedor #encabezado {	width:100%;
+				background-color:#672337;
+				color:#ffffff;
+				font-size:18pt;
+	}
+
+#contenedor #navegacion {
+	
+	}
+
+
+#contenedor #contenido { 	width:100%;
+				
+				float:left;
+			
+	
+	}
+
+#contenedor #contenido #menu { margin:left:120%;
+
+
+	}
+
+
+
+#contenedor #columna1 {		float:left;
+				width:30%;
+				margin-left:2%;
+				margin-bottom:10%;
+				margin-top:4%;
+	}
+
+#contenedor ul,li {		list-style-type:none;
+				
+					
+}			
+
+#contenedor #columna1 ul,li,img {		width:100%;
+				
+	}
+
+
+#contenedor #columna2 {		float:left;
+				width:30%;
+				margin-left:3%;
+				margin-top:4%
+
+	}
+
+#contenedor #columna2 ul,li,img {		
+						
+
+
+
+	}
+
+
+#contenedor #columna3 {		float:left;
+				width:30%;
+				margin-left:2%;
+				margin-top:4%;
+				
+				
+	}
+
+
+
+#contenedor #pie {	width:100%;
+			background-color:#272337;
+			clear:both;
+			
+
+
+
+
+	}

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ES"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>meteogalix</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+
+
+</head>
+<body>
+<div id="contenedor">
+<div id="encabezado">
+<h1><b>meteogalix, aplicación web sobre api de meteogalicia</b></h1>
+</div>
+
+<ul id="lista">
+<li><a href="/a coruña">a coruña</a></li>
+<li><a href="/Vigo">Vigo</a></li>
+<li><a href="/Vilagarcía">Vilagarcía</a></li>
+<li><a href="/Ferrol">Ferrol</a></li>
+<li><a href="/Foz">Foz</a></li>
+<li><a href="/corcubión">Corcubión</a></li>
+<li><a href="/camarinas">Camariñas</a></li>
+<li><a href="/Corme">Corme</a></li>
+<li><a href="/a Guarda">a Guarda</a></li>
+<li><a href="/Ribeira">Ribeira</a></li>
+<li><a href="/Muros">Muros</a></li>
+<li><a href="/Pontevedra">Pontevedra</a></li>
+</ul>
+
+<h2>Formulario de busqueda por localidades</h2>
+<div id="menu">
+<h5>selecciona un puerto de la lista para geolocalizarlo con google maps</h5>
+<form method="POST" action="/getTidesInfo">
+
+<h3></h3>
+<select name="localidad">
+	<option value="a coruña">a coruña</option>
+        <option value="vigo">vigo</option>
+        <option value="Vilagarcia">Vilagarcia</option>
+        <option value="Ferrol">Ferrol</option>
+        <option value="Foz">Foz</option>
+        <option value="corcubión">corcubion</option>
+        <option value="camariñas">ria de camariñas</option>
+        <option value="corme">ria de corme</option>
+        <option value="a guarda">a guarda</option>
+        <option value="Ribeira">Ribeira</option>
+        <option value="Muros">Muros</option>
+        <option value="Pontevedra">Pontevedra</option>
+
+	</select>
+
+
+
+</div>
+<div id="contenido">
+<h3>selecciona un puerto para conocer el estado de la marea, y su geolocalizacion</h3>
+
+<input type="radio"name="mareas"value="-8.9918,42.5593" />a coruña
+<input type="radio"name="mareas"value="-8.7413,42.2237" />Vigo
+<input type="radio"name="mareas"value="-8.76377,42.59795" />Vilagarcía
+<input type="radio"name="mareas"value="-8.23145,43.48696" />Ferrol
+<input type="radio"name="mareas"value="-7.25585,43.57058" />Foz
+<input type="radio"name="mareas"value="-9.19177,42.94544" />Corcubión
+<p>
+<input type="radio"name="mareas"value="-9.18085,43.133" />Camariñas
+<input type="radio"name="mareas"value="-8.96078,43.26658" />Corme
+<input type="radio"name="mareas"value="-8.86991,41.90467" />A guarda
+<input type="radio"name="mareas"value="-8.9918,42.5593" />Ribeira
+<input type="radio"name="mareas"value="-9.05726,42.77677" />Muros
+<input type="radio"name="mareas"value="-8.642,42.43318" />Pontevedra
+</p>
+
+<input type="submit"value="mostrar">
+
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="pie">
+<p>meteogalix 2014<p>
+</div>
+</div>
+</body>
+</html>                
+
+

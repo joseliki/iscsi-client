@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+body {	width:100%;
+	background-image: url('static/images/ribeira.jpg');
+	background-color:transparent;
+	
+	
+	font-size:14px;
+	}
+
+#contenedor {	width:70%;
+		background-color:#ffffff;
+		margin-left:13%;
+		border-radius:3px;
+
+
+
+
+	}
+
+#contenedor #encabezado {	width:100%;
+				background-color:#672337;
+				color:#ffffff;
+				font-size:18pt;
+	}
+
+#contenedor #navegacion {
+	
+	}
+
+
+				
+			
+
+	
+
+#contenedor #contenido { 	width:100%;
+				
+				float:left;
+			
+	
+	}
+
+
+
+
+
+
+
+
+
+
+#contenedor #contenido #menu { margin:left:120%;
+
+
+	}
+
+
+
+#contenedor #columna1 {		float:left;
+				width:30%;
+				margin-left:2%;
+				margin-bottom:10%;
+				margin-top:4%;
+	}
+
+#contenedor ul,li {		list-style-type:none;
+				
+					
+}			
+
+#contenedor #columna1 li,img {		width:100%;
+							
+	}
+
+
+#contenedor #columna2 {		float:left;
+				width:30%;
+				margin-left:3%;
+				margin-top:4%
+
+	}
+
+#contenedor #columna2 ul,li,img {		
+						
+
+
+
+	}
+
+
+#contenedor #columna3 {		float:left;
+				width:30%;
+				margin-left:2%;
+				margin-top:4%;
+				
+				
+	}
+
+
+
+#contenedor #pie {	width:100%;
+			background-color:#272337;
+			clear:both;
+			
+
+
+
+
+	}
+
+
+
+
+
+
+
+</style>
+
+<title></title>
+</head>
+<body>
+<div id="contenedor">
+<div id="encabezado">
+<h1>meteogalix, aplicacion web sobre api de meteogalicia</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</div>
+<div id="navegacion">
+<p>lista de menu navegacion</p>
+</div>
+
+<div id="iframe">
+
+
+
+
+
+
+</div>
+<div id="banner">
+</div>
+
+
+
+
+<h2>Formulario de busqueda por localidades</h2>
+<div id="menu">
+<h5>selecciona un puerto de la lista para geolocalizarlo con google maps</h5>
+<form method="POST" action="/getTidesInfo">
+
+<h3></h3>
+<select name="localidad">
+	<option value="a coruña">a coruña</option>
+        <option value="vigo">vigo</option>
+        <option value="Vilagarcia">Vilagarcia</option>
+        <option value="Ferrol">Ferrol</option>
+        <option value="Foz">Foz</option>
+        <option value="corcubión">corcubion</option>
+        <option value="camariñas">ria de camariñas</option>
+        <option value="corme">ria de corme</option>
+        <option value="a guarda">a guarda</option>
+        <option value="Ribeira">Ribeira</option>
+        <option value="Muros">Muros</option>
+        <option value="Pontevedra">Pontevedra</option>
+
+	</select>
+
+
+
+</div>
+<div id="radio">
+<h3>selecciona un puerto para conocer el estado de la marea, y su geolocalizacion</h3>
+
+<input type="radio"name="mareas"value="-8.9918,42.5593" />a coruña
+<input type="radio"name="mareas"value="-8.7413,42.2237" />Vigo
+<input type="radio"name="mareas"value="-8.76377,42.59795" />Vilagarcía
+<input type="radio"name="mareas"value="-8.23145,43.48696" />Ferrol
+<input type="radio"name="mareas"value="-7.25585,43.57058" />Foz
+<input type="radio"name="mareas"value="-9.19177,42.94544" />Corcubión
+<p>
+<input type="radio"name="mareas"value="-9.18085,43.133" />Camariñas
+<input type="radio"name="mareas"value="-8.96078,43.26658" />Corme
+<input type="radio"name="mareas"value="-8.86991,41.90467" />A guarda
+<input type="radio"name="mareas"value="-8.9918,42.5593" />Ribeira
+<input type="radio"name="mareas"value="-9.05726,42.77677" />Muros
+<input type="radio"name="mareas"value="-8.642,42.43318" />Pontevedra
+</p>
+
+<input type="text"name="semanal">
+<select name="ident">
+        <option value="1">a coruña</option>
+        <option value="3">vigo</option>
+        <option value="4">Vilagarcia</option>
+        <option value="5">Ferrol</option>
+        <option value="6">Foz</option>
+        <option value="7">corcubion</option>
+        <option value="8">ria de camariñas</option>
+        <option value="9">ria de corme</option>
+        <option value="10">a guarda</option>
+        <option value="11">Ribeira</option>
+        <option value="12">Muros</option>
+        <option value="13">Pontevedra</option>
+
+        </select>
+
+<input type="submit"value="mostrar">
+
+</form>
+</div>
+
+
+<div id="columna1">
+<li><img src="static/images/ribeira.jpg"></li>
+<li><p>El municipio de Corcubión está situado en el extremo oeste de la provincia de A Coruña (Galicia), en la más alta de las Rías Baixas y formando parte de la llamada Costa da Morte.
+
+Corcubión, la más alta de las Rías Baixas, posee las características de estas y anuncia las propias de la costa más al norte. Así, esta tierra de transición conjuga en perfecta armonía el sosiego y la calma de las Rías Baixas y la bravura y la naturaleza viva características de la Costa da Morte.
+
+El Municipio de Corcubión es uno de los más pequeños de Galicia, con una extensión de 7.6 km² y una población de unos 2000 habitantes. Está constituido por dos parroquias, San Marcos de Corcubión (zona urbana) y San Pedro de Redonda (zona rural).</p></li>
+
+
+
+
+
+</div>
+
+<div id="columna2">
+<li><img src="static/images/camariñas.jpg" width="400" height="235" /></li>
+<li><p>Riveira1 (oficialmente, en gallego, Ribeira)2 es un municipio de Galicia (España) situado en la costa oeste de la provincia de La Coruña, en la comarca del Barbanza. Su capital y núcleo urbano más poblado es Santa Eugenia (Santa Uxía de Ribeira, oficialmente, en gallego).
+Es uno de los más meridionales de la provincia. Limita con los municipios de Puebla del Caramiñal y Puerto del Son. Cuenta con uno de los puertos pesqueros de bajura más relevantes de la provincia e incluso de Europa. En él se desestiban también túnidos destinados a la manufactura en sus empresas conserveras.
+Es uno de los municipios más poblados de la provincia después de las grandes urbes. Posee importantes servicios administrativos</p></li>
+
+
+</div>
+
+<div id="columna3">
+<li><img src="static/images/corcubion.jpg"width="400"height="235"></li>
+<li><p> El puerto pesquero y deportivo de Camariñas se encuentra en el corazón de la conocida como Costa da Morte,, costa NW de Galicia bañada por el imponente Atlántico.
+Ocupa una península que cierra por el norte la ría que toma su nombre. Es además un punto muy resguardado en una zona complicada para la navegación con mal tiempo.
+
+Marcas. Arribada al puerto.
+
+Su reconocimiento no ofrece duda alguna. el coloso Cabo Vilán nos marca sin lugar a poder equivocarnos, que por su S está la Ría de Camariñas.
+
+El bancal de las Quebrantas extenso pedregal al N de Muxía y al W de Punta Galera, tendido 0,6M del NW al SE y de 0,3M de ancho con unos fondos mínimos que se encuentran en la Quebranta grande (la más al N) y la Quebranta chica al S y donde siempre rompe a partir de poca mar. Límite NW 43° 08'.5N 009° 14'.3W | Límite NE 43° 08'.5N 009° 13'.8W | Límite SE 43° 07'.8N 009° 13'.4W | Límite SW 43° 07'.9N 009° 13'.9W | establece dos canales para acceder al interior de la Ría de Camariñas:
+
+    El del E o Boca Chica entre el bancal y la costa
+    El Canal de la Barca o Boca Grande por el W y S de ellas.
+
+Para facilitar el acceso existen dos enfilaciones luminosas, ambas nos balizan la canal de Boca Grande.
+
+    La primera situada en Punta Lago al fondo de la ría con sectores de luz RVB y una torre de hormigón para la entrada de día al Rv: 108,5º.
+    La otra por el S de Quebrantas salvando los arrecifes de Punta la Barca. Situada en Punta Villueira con el faro posterior en Punta del Castillo.
+</p></li>
+</div>
+
+
+<div id="pie">
+<p>meteogalix 2014</p>
+
+</div>
+
+
+
+</div>
+</body>
+</html>

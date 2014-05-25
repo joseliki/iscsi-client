@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+body {	width:100%;
+	background-color:#cddeee;
+	font-size:14px;
+	}
+
+#contenedor {	width:90%;
+		background-color:#ffffff;
+		margin-left:4%;
+		border-radius:4px;
+
+
+
+	}
+
+#contenedor #encabezado h1 {	width:100%;
+				background-color:#672337;
+				color:#ffffff;
+				font-size:36pt;
+				text-align:center;
+				text-transform:capitalize;
+	}
+
+#contenedor h2 {		color:#672337;
+				text-align:center;
+				
+}
+
+#contenedor h3 {		color:#672337;
+                                text-align:center;
+			
+}
+
+
+#contenedor #navegacion {
+	
+	}
+
+
+
+
+#contenedor tr,td {		color:#672337;
+				text-align:left;
+				font-size:14pt;
+				font-family:Georgia;
+				
+					
+}			
+
+
+
+
+#contenedor #pie {	width:100%;
+			background-color:#672337;
+			clear:both;
+			
+
+
+
+
+	}
+
+
+
+
+
+
+
+</style>
+		
+
+
+</style>
+</head>
+<body>
+<div id="contenedor">
+<div id="encabezado">
+<h1>estado de las mareas en las costas de galicia</h1>
+</div>
+<h2>los resultados fueron obtenidos por las estaciones del meteosix en los puertos mas cercanos</h2>
+
+<h3>tabla de estado de las mareas</h3>
+<h3>{{ localidad }}</h3>
+
+<h3>graficos sobre las mareas semanal</h3>
+<div align="center"><img width="600"height="300"src="http://www.meteogalicia.es/web/predicion/maritima/getImaxeMareas.action?idPuerto={{ id }}&data={{ data }}&periodo=7"></div>
+
+<h3>graficos sobre las mareas mensual</h3>
+<div align="center"><img width="600"height="300"src="http://www.meteogalicia.es/web/predicion/maritima/getImaxeMareas.action?idPuerto={{ id }}&data={{ data }}&periodo=30"></div>
+
+<h3>graficos sobre las mareas anual</h3>
+<div align="center"><img width="600"height="300"src="http://www.meteogalicia.es/web/predicion/maritima/getImaxeMareas.action?idPuerto={{ id }}&data={{ data }}&periodo=365"></div>
+
+
+<table border="0">
+<tr>
+<td>el estado de la marea es:{{ state_high }} (pleamar)</td>
+</tr>
+<tr>
+<td>la pleamar tuvo lugar el dia y hora:{{ plea }}</td>
+</tr>
+<tr>
+<td>el estado de la marea es:{{ state_low }} (bajamar)</td>
+</tr>
+<tr>
+<td>la bajamar tuvo lugar el dia y hora:{{ baja }}</td>
+</tr>
+</table>
+<h3>geolocalizacion de: {{localidad}} , por medio de google maps</h3>
+<p><div align="center"><iframe width="600" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?q={{lati}},{{longi}}&amp;ie=UTF8&amp;t=h&amp;z=14&amp;ll={{lati}},{{longi}}&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/?q={{lati}},{{longi}}&amp;ie=UTF8&amp;t=h&amp;z=14&amp;ll={{lati}},{{longi}}&amp;source=embed" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small></div><p>
+<h3>geolocalizacion de: {{localidad}} , por medio de yahoo maps</h3>
+<p><div align="center"><iframe width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.yahoo.com/?lat={{ lati }}&lon={{ longi }}&d={{ localidad }}%2C%20Spain"
+<div id="pie">
+<p>meteogalix 2014</p>
+</div>
+</body>
+</html>
