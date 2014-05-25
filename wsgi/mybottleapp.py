@@ -84,4 +84,4 @@ def getTidesInfo():
 
 
 
-run(host='localhost', port=80, debug=True)
+run(host='http://bottle-meteogalix.rhcloud.com', port=80, debug=True)
