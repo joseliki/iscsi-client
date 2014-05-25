@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name='galix',
+setup(name='bottle',
       version='1.0',
       description='OpenShift App',
       author='joseliki',
