@@ -9,6 +9,6 @@ setup(name='galix',
       install_requires=[
         'bottle',
         'requests',
-	'json'
+	'simplejson'
         ],
      )
