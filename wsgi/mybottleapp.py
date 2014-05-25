@@ -84,4 +84,4 @@ def getTidesInfo():
 
 
 
-run(host='localhost', port=8080, debug=True)
+run(host='localhost', port=80, debug=True)
