@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import re
 from bottle import route, run, get, post, template, request, static_file
-import json
+import simplejson
 import requests
 import urllib2
 key = open('key.txt','r')
@@ -84,4 +84,4 @@ def getTidesInfo():
 
 
 
-run(host='http://bottle-meteogalix.rhcloud.com', port=80, debug=True)
+run(host='localhost', port=80, debug=True)
